@@ -266,11 +266,11 @@ figure {
 }
 
 .main-color3 {
-  color: #55e6a5 !important;
+  color: #003162 !important;
 }
 
 .main-colorbg3 {
-  background-color: #55e6a5;
+  background-color: #003162;
 }
 
 .main-color4 {
@@ -397,6 +397,7 @@ img {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+  color: #fff !important;
 }
 
 .butn.butn-bg:hover {
@@ -480,7 +481,7 @@ img {
 }
 
 .butn-circle.colorbg-3:after {
-  background: #55e6a5;
+  background: #003162;
 }
 
 .butn-circle span {
@@ -986,6 +987,7 @@ img {
 .main-marq.lrg .box .item h4 {
   font-size: 6vw;
   font-weight: 700;
+  color: #fff !important;
 }
 
 .main-marq.xlrg .box .item {
@@ -1004,7 +1006,7 @@ img {
 }
 
 .main-marq .strok .item h4 {
-  color: transparent !important;
+  color: #fff !important;
   -webkit-text-stroke: 0.5px #1d1d1d;
 }
 
@@ -1036,12 +1038,14 @@ img {
 .main-marq .box .item h4 {
   white-space: nowrap;
   line-height: 1;
+   color: #fff !important;
   margin: 0;
 }
 
 .main-marq .box .item h4 .icon {
   font-family: 'Sora', sans-serif;
   margin-bottom: -15px;
+   color: #fff !important;
 }
 
 .main-marq .box .item h2 {
@@ -3906,7 +3910,7 @@ body.loaded {
 }
 
 .sec-lg-head .dot-titl.colorbg-3:before, .sec-lg-head .dot-titl.colorbg-3:after {
-  background: #55e6a5;
+  background: #003162;
 }
 
 .sec-lg-head .dot-titl-non {
@@ -4478,7 +4482,7 @@ body.loaded {
 }
 
 .intro-corp .imgs .img1.main-color3:after {
-  background: #55e6a5;
+  background: #003162;
 }
 
 .intro-corp .imgs .img2 {
@@ -5866,6 +5870,7 @@ footer .bg-pattern {
 .serv-marq {
   position: relative;
   z-index: 3;
+  color: #fff !important;
 }
 
 .serv-marq .ontop {
@@ -9258,10 +9263,7 @@ header.in-box {
 }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  .shop-cart {
-    /* Force table to not be like tables anymore */
-    /* Hide table headers (but not display: none;, for accessibility) */
-  }
+ 
   .shop-cart table {
     width: 100%;
   }
@@ -9278,21 +9280,17 @@ header.in-box {
     border: 1px solid #777;
   }
   .shop-cart td {
-    /* Behave  like a "row" */
     border: none;
     border-bottom: 1px solid #999;
     position: relative;
     padding-left: 50%;
   }
   .shop-cart td:before {
-    /* Now like a table header */
     position: absolute;
-    /* Top/left values mimic padding */
     left: 6px;
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
-    /* Label the data */
     content: attr(data-column);
   }
   .shop-cart td.remove {
@@ -9355,6 +9353,14 @@ header.in-box {
 @media screen and (max-width: 1300px) {
   body.home-arch main:after {
     display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+    .mobile-resp {
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: center!important;
   }
 }
 
