@@ -10238,3 +10238,13 @@ header.in-box {
 }
 
 /* ====================== [ End Responsive ] ====================== */
+
+
+#form-messages {
+  color: #ffffff;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #172542;
+  font-size: 14px;
+  border-radius: 8px;
+}

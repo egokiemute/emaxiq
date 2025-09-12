@@ -246,9 +246,22 @@
             <div class="col-lg-6 offset-lg-1 valign">
               <div class="full-width">
                 <form
-                  id="contact-form"
+                  id="contact-form"  onsubmit="handleFormSubmit(event)"
                 >
-                  <div class="messages"></div>
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="30cd07f7-e931-44c3-b802-3a830922ad3d"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="-- New Service Request --"
+                  />
+                  <div class="mb-3">
+                    <div id="success-message" class="d-none"></div>
+                    <div id="error-message" class="d-none"></div>
+                  </div>
 
                   <div class="controls row">
                     <div class="col-lg-6">
@@ -307,6 +320,7 @@
                     </div>
                   </div>
                 </form>
+                <div id="form-messages" class="d-none"></div>
               </div>
             </div>
           </div>
@@ -363,5 +377,8 @@
 
     <!-- custom scripts -->
     <script src="../assets/js/scripts.js"></script>
+
+    <!-- Contact form script -->
+     <script src="../assets/js/contact-form.js"></script>
   </body>
 </html>
