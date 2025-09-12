@@ -673,6 +673,8 @@ $(window).on("load", function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
+    $("#year").text(new Date().getFullYear());
+
 
     /* =============================================================================
     -----------------------------  Contact Valdition   -----------------------------
